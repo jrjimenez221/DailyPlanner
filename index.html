@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Day Scheduler</title>
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!--Moment.js-->
+    <script src="lib/moment.min.js"></script>
+    <!--My css-->
+    <link rel="stylesheet" type="text/css" href="./stylesheet.css">
+
+
+</head>
+<body>
+    <header class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">Work Day Scheduler</h1>
+          <p class="lead">a simple calendar app for scheduling your work day</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="row">
+            <h2 class="col-3 justify-content-between">Nov 7, 2020</h2>
+        </section>
+        <div class="hours">
+
+            <section class="row dsgray justify-content-md-center">
+                <div class="col-2 blue hrt">
+                    <h3>6am</h3>
+                </div>
+                <div class="col-8 red">
+                    <h5 id="6amTitle" class="hrContent"></h5>
+                    <p id="6amEvent"  class="hrContent"></p>
+                </div>
+                <div class="col-2 blue rsub">
+                    <button id="6amBtn">add event</button>
+                </div>
+            </section>
+
+
+
+
+            <div class="row dsgray justify-content-md-center clearfix">
+                <div class="col-1 blue hrt">
+                    <h3>7am</h3>
+                </div>
+                <div class="col-8 red">
+                    <p>Content of the tab</p>
+                </div>
+                <div class="col-2 blue rsub"></div>
+            </div>
+
+            <div class="row dsgray justify-content-md-center clearfix">
+                <div class="col-1 blue">
+                    <h5>8am</h5>
+                </div>
+                <div class="col-8 red">
+                    <p>Content of the tab</p>
+                </div>
+                <div class="col-2 blue rsub"></div>
+            </div>
+
+            <div class="row dsgray justify-content-md-center clearfix">
+                <div class="col-1 blue">
+                    <h5>9am</h5>
+                </div>
+                <div class="col-8 red">
+                    <p>Content of the tab</p>
+                </div>
+                <div class="col-2 blue rsub"></div>
+            </div>
+
+            <div class="row dsgray justify-content-md-center clearfix">
+                <div class="col-1 blue">
+                    <h5>10am</h5>
+                </div>
+                <div class="col-8 red">
+                    <p>Content of the tab</p>
+                </div>
+                <div class="col-2 blue rsub"></div>
+            </div>
+
+        </div>
+
+
+
+
+    </main>
+
+
+
+
+
+    <script>
+        $(document).ready(function() {
+            $("#6amBtn").on("click", function() {
+                let contentInputTitle = prompt("Name of event")
+                let contentInputDetails = prompt("Event summary")
+                $('#6amTitle').text(contentInputTitle)
+                $('#6amEvent').text(contentInputDetails)
+            })
+        });
+
+        
+        
+        
+        
+        
+        
+        
+
+    </script>
+    
+</body>
+</html>
