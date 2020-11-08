@@ -1,5 +1,18 @@
 
+# Rey's Work Day Scheduler
+## Mostly complete
+Currently able to:
+* Take input for events
+* Store input into localStorage
+* Look half decent on pc
+*
 
+Still need to:
+* Make use of Moment.js
+* Change event background-color when not empty
+
+## Here's a screen shot
+[screenshot](./assets/workDaySchedulerScreenshot.png)
 
 
 
