@@ -1,5 +1,6 @@
+
 .red{
-    background-color: lightgrey;
+    background-color: rgb(240, 240, 240);
 }
 .dsgray{
     background-color: darkslategray;
@@ -11,6 +12,8 @@
     
     border: 1px solid black;
     border-radius: 15px;
+    min-height: 7vh;
+    
 }
 .rsub{
     border-radius: 0 15px 15px 0;
@@ -22,7 +25,40 @@
 h3{
     margin: auto;
     text-align: center;
+    margin-top: 10%;
+    text-decoration: underline;
+    font-size: 25px;
 }
 h2{
     margin: auto;
+}
+button{
+    margin:0 auto;
+    display:block;
+    margin-top: 10%;
+}
+.hrContent{
+    overflow: auto;
+    min-height: 3vh;
+    margin: 0;
+    padding: 0;
+
+}
+footer{
+    background-color: black;
+    border-top: solid gold 1px;
+    min-height: 5vh;
+    margin-top: 5vh;
+
+}
+.signature{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    color: gold;
+    font-family: 'Press Start 2P', cursive;
+    padding-right: 1vh;
+    background-color: black;
+    border-radius: 10%;
+
 }
